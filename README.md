@@ -16,7 +16,7 @@ and
 
 Takuya Isomura, Hideaki Shimazaki, Karl Friston
 
-Preprint at https://www.biorxiv.org/content/10.1101/654467v2
+Preprint at https://doi.org/10.1101/2020.12.10.420547
 
 
 Copyright (C) 2021 Takuya Isomura
