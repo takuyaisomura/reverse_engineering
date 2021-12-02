@@ -1,21 +1,27 @@
 
 %--------------------------------------------------------------------------------
+% maze.m
+%
 % This demo is included in
 % Canonical neural networks perform active inference
-% Takuya Isomura et al
+% Takuya Isomura, Hideaki Shimazaki, Karl J. Friston
+%
+% The MATLAB scripts are available at
+% https://github.com/takuyaisomura/reverse_engineering
 %
 % Copyright (C) 2020 Takuya Isomura
 % (RIKEN Center for Brain Science)
 %
 % 2020-09-02
+%
+
 %--------------------------------------------------------------------------------
+% initialisation
 
 clear
-
-% initialization
 nx       = 99;    % length of maze
 ny       = 19;    % width of maze
-nv       = 11;    % size of feild of vision
+nv       = 11;    % size of field of vision
 
 T        = 20000; % maximum duration
 No       = nv*nv; % dimensionality of observations
@@ -36,7 +42,14 @@ qa0(:,:,1,1) = qa0(:,:,1,1) + eye(No,Ns) * 990000000;
 qa0(:,:,2,2) = qa0(:,:,2,2) + eye(No,Ns) * 990000000;
 D        = ones(Ns,2,'single')*0.5/Nd;
 E        = ones(Nd,2,'single')*0.5/Nd;
-Eright   = 0.25;  % varying prior of selecting rightward motion
+
+Eright   = 0.25;  % prior of selecting rightward motion
+% In the paper 'Canonical neural networks perform active inference',
+% Eright = 0.15 corresponds to the E_right = 0.0023 condition (black)
+% Eright = 0.25 corresponds to the E_right = 0.0039 condition (blue)
+% Eright = 0.35 corresponds to the E_right = 0.0055 condition (cyan)
+% Please refer to Figs. 4 and 5 in the paper.
+
 E(:,1)   = kron([0.25 0.25 0.5-Eright Eright]',ones(Nd/4,1))/(Nd/4);
 E(:,2)   = 1 - E(:,1);
 Q(1)     = mdp_init(qa0,qbi0,qci0,D,E,T);
@@ -144,7 +157,6 @@ Q(h).F = mdp_vfe(Q(h),sim_type,200);
 Flist(:,(h2-1)*Ntrial+h) = Q(h).F;
 
 % estimate E based exclusively on decisions
-%Eest(:,(h2-1)*Ntrial+h) = mean(reshape(Q(h).qd_(:,3:T),[Nd T-2])');
 Eest(:,(h2-1)*Ntrial+h) = mean(reshape(Q(h).d(:,3:T),[Nd T-2])');
 
 %--------------------------------------------------------------------------------
@@ -194,8 +206,6 @@ if (h2 == 1)
 end
 
 end
-
-save(['nn_mdp_data_E',num2str(Eright),'.mat'], 'time', 'qCilist', 'Flist', 'Eest', '-v7.3')
 
 end
 

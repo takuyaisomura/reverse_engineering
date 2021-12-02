@@ -1,13 +1,20 @@
 
 %--------------------------------------------------------------------------------
+% mdp_risk.m
+%
 % This demo is included in
 % Canonical neural networks perform active inference
-% Takuya Isomura et al
+% Takuya Isomura, Hideaki Shimazaki, Karl J. Friston
+%
+% The MATLAB scripts are available at
+% https://github.com/takuyaisomura/reverse_engineering
 %
 % Copyright (C) 2020 Takuya Isomura
 % (RIKEN Center for Brain Science)
 %
 % 2020-09-02
+%
+
 %--------------------------------------------------------------------------------
 
 function Gamma = mdp_risk(Q,sim_type,range,del_th,risk)
