@@ -2,6 +2,10 @@
 
 ## Overview
 
+This project involves MATLAB scripts.
+
+<br>
+
 This is a supplementary material of
 
 "Reverse-engineering neural networks to characterize their cost functions"
@@ -18,11 +22,12 @@ Takuya Isomura, Hideaki Shimazaki, Karl Friston
 
 Preprint at bioRxiv https://doi.org/10.1101/2020.12.10.420547
 
+<br>
 
 Copyright (C) 2021 Takuya Isomura
 
 (RIKEN Center for Brain Science)
 
 
-2021-4-15
+2021-12-2
 
