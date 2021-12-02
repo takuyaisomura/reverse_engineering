@@ -31,3 +31,6 @@ Copyright (C) 2021 Takuya Isomura
 
 2021-12-2
 
+
+## License
+This project is covered under the **GNU General Public License v3.0**.
