@@ -1,5 +1,7 @@
 # Reverse engineering neural networks
 
+[![DOI](https://zenodo.org/badge/266333834.svg)](https://zenodo.org/badge/latestdoi/266333834)
+
 ## Overview
 
 This project involves MATLAB scripts.
