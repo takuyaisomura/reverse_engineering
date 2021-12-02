@@ -6,7 +6,7 @@ This project involves MATLAB scripts.
 
 <br>
 
-This is a supplementary material of
+This project involves a supplementary material of
 
 "Reverse-engineering neural networks to characterize their cost functions"
 
@@ -14,7 +14,7 @@ Takuya Isomura, Karl Friston
 
 Neural Computation (2020) 32 (11): 2085–2121. https://doi.org/10.1162/neco_a_01315
 
-and
+and a supplementary material of
 
 "Canonical neural networks perform active inference"
 
