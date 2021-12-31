@@ -81,7 +81,7 @@ else
   Q(1).E(:,2) = 1 - Q(1).E(:,1);
 end
 if (h2 == 21)
-  csvwrite(['nn_mdp_Eest_E',num2str(Eright),'.csv'], mean(Eest(:,1+(0:10-1)*Ntrial)')')
+  csvwrite(['nn_mdp_Eest_E',num2str(Eright),'.csv'], mean(Eest(:,1+(0:10-1)*Ntrial)')'/sum(mean(Eest(:,1+(0:10-1)*Ntrial)')))
 end
 
 for h = 1:Ntrial
