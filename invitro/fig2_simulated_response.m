@@ -27,7 +27,7 @@ qa_amp_max  = 400;           % amplitude for prior of parameters
 seed        = 0;
 rng(1000000+seed)
 
-load('response_data.mat')
+load('response_data_ctrl.mat')
 
 for condition = 1:3
 for h = 1:100
