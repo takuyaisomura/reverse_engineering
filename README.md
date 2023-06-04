@@ -24,7 +24,7 @@ This is a supplementary material of
 
 Takuya Isomura, Karl Friston
 
-Neural Computation (2020) 32 (11): 2085–2121. https://doi.org/10.1162/neco_a_01315
+Neural Computation 32(11), 2085–2121 (2020). https://doi.org/10.1162/neco_a_01315
 
 
 ## maze
@@ -34,7 +34,17 @@ This is a supplementary material of
 
 Takuya Isomura, Hideaki Shimazaki, Karl Friston
 
-Preprint at bioRxiv https://doi.org/10.1101/2020.12.10.420547
+Communications Biology 5, 55 (2022). https://doi.org/10.1038/s42003-021-02994-2
+
+
+## invitro
+This is a supplementary material of
+
+"Experimental validation of the free-energy principle with in vitro neural networks"
+
+Takuya Isomura, Kiyoshi Kotani, Yasuhiko Jimbo, Karl Friston
+
+Preprint at bioRxiv https://doi.org/10.1101/2022.10.03.510742
 
 
 ## License
