@@ -1,6 +1,6 @@
 
 %--------------------------------------------------------------------------------
-% video_output.m
+% fig3_video_output.m
 %
 % This analysis is included in
 % Experimental validation of the free-energy principle with in vitro neural networks
@@ -14,7 +14,7 @@
 
 %--------------------------------------------------------------------------------
 
-function [] = video_output(fig2, dirname, datatype, Ninit, o, W, Wp, phi1, phi0)
+function [] = fig3_video_output(fig, dirname, datatype, Ninit, o, W, Wp, phi1, phi0)
 
 No       = length(o(:,1));   % number of sensory stimuli
 Nsession = length(W(1,1,:)); % number of sessions
@@ -56,12 +56,12 @@ W_s(33:64,:) = reshape(W(2,1:32,:),[32 100])*2;
 W_s          = max(min(W_s,3.96),0.001)*100/4;
 
 % open video
-clf(fig2)
+clf(fig)
 vid = VideoWriter([dirname,'free_energy_gradient_W_',datatype,'.mp4'],'MPEG-4');
 open(vid);
 
 % run animation
-figure(fig2)
+figure(fig)
 for t = 1:Nsession
  surf(L_W,img,'EdgeColor','none'), hold on
  view(135,45)
@@ -77,7 +77,7 @@ end
 
 % close video
 close(vid);
-print(fig2,[dirname,'free_energy_gradient_W_',datatype,'.png'],'-dpng')
+print(fig,[dirname,'free_energy_gradient_W_',datatype,'.png'],'-dpng')
 
 %--------------------------------------------------------------------------------
 % plot theoretically predicted trajectory
@@ -89,12 +89,12 @@ W_s(33:64,:) = reshape(Wp(2,1:32,:),[32 100])*2;
 W_s          = max(min(W_s,3.96),0.001)*100/4;
 
 % open video
-clf(fig2)
+clf(fig)
 vid = VideoWriter([dirname,'free_energy_gradient_Wp_',datatype,'.mp4'],'MPEG-4');
 open(vid);
 
 % run animation
-figure(fig2)
+figure(fig)
 for t = 1:Nsession
  surf(L_W,img,'EdgeColor','none'), hold on
  view(135,45)
@@ -117,7 +117,7 @@ end
 
 % close video
 close(vid);
-print(fig2,[dirname,'free_energy_gradient_Wp_',datatype,'.png'],'-dpng')
+print(fig,[dirname,'free_energy_gradient_Wp_',datatype,'.png'],'-dpng')
 
 end
 
