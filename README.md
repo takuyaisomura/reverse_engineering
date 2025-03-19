@@ -44,7 +44,17 @@ This is a supplementary material of
 
 Takuya Isomura, Kiyoshi Kotani, Yasuhiko Jimbo, Karl Friston
 
-Preprint at bioRxiv https://doi.org/10.1101/2022.10.03.510742
+Nature Communications 14, 4547 (2023). https://doi.org/10.1038/s41467-023-40141-z
+
+
+## algorithm
+This is a supplementary material of
+
+"Triple equivalence for the emergence of biological intelligence"
+
+Takuya Isomura
+
+Preprint at arXiv https://doi.org/10.48550/arXiv.2409.04928
 
 
 ## License
