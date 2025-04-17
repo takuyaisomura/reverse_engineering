@@ -54,7 +54,7 @@ This is a supplementary material of
 
 Takuya Isomura
 
-Preprint at arXiv https://doi.org/10.48550/arXiv.2409.04928
+Communications Physics 8, 160 (2025). https://doi.org/10.1038/s42005-025-02059-4
 
 
 ## License
