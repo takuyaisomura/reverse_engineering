@@ -14,7 +14,7 @@ Copyright (C) 2021 Takuya Isomura
 
 <br>
 
-2021-12-02
+2026-11-06
 
 
 ## bss
@@ -60,7 +60,7 @@ Communications Physics 8, 160 (2025). https://doi.org/10.1038/s42005-025-02059-4
 ## gonogo
 This is a supplementary material of
 
-"The free-energy principle predicts individual learning trajectories in zebrafish"
+"Testing the free-energy principle through prediction of individual learning trajectories in zebrafish"
 
 Takuya Isomura, Yuki Tanimoto, Makio Torigoe, Hitoshi Okamoto, Hideaki Shimazaki
 
